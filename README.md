@@ -26,17 +26,6 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-> **Note:** `requirements.txt` currently contains a large, mostly unrelated set of packages (from a broader environment export). At minimum, this project needs:
-> ```
-> PyQt6
-> PyQt6-Multimedia
-> opencv-python
-> mediapipe
-> numpy
-> librosa
-> ```
-> Consider regenerating `requirements.txt` with `pip freeze` from a clean virtual environment scoped to just this project so installs are faster and don't pull in unrelated tooling (Jupyter, Sphinx, testing libraries, etc.).
-
 ## Project structure
 
 ```
@@ -57,14 +46,8 @@ Make sure `PedroPedro.mp3` is in the same directory as the scripts, then run:
 python main.py
 ```
 
-A window titled **"Leaf Village"** will open showing your webcam feed with hand landmarks drawn on it. Bring both palms together in front of the camera (fingers aligned) to trigger the effect.
+A window titled **"Hands up 🔫"** will open showing your webcam feed with hand landmarks drawn on it. Bring both palms together in front of the camera (fingers aligned) to trigger the effect.
 
 ## Known issues / things to clean up
-
-- `beat.py` and `pedro.py` reference the audio file with slightly different filenames (`"Pedro Pedro.mp3"` with a space vs. `PedroPedro.mp3` without) — make sure the actual file name matches what each script expects.
-- `main.py` calls `window.closeEvent()` after `sys.exit()`, which is unreachable code and can be removed.
 - `requirements.txt` includes many packages unrelated to this project (see note above).
 
-## License
-
-Add a license of your choice here (e.g. MIT) if you plan to share this project.
