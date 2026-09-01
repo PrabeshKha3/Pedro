@@ -14,7 +14,7 @@ class Pedro:
         self.right_hand = right_hand
 
         self.base_dir = Path(__file__).resolve().parent
-        audio_path = self.base_dir / "Pedro Pedro.mp3"
+        audio_path = self.base_dir / "PedroPedro.mp3"
 
         self.beat_times = [3.78485261, 4.17959184, 4.57433107, 4.96907029, 5.36380952, 5.75854875, 6.15328798, 6.54802721, 6.96598639, 7.36072562, 7.75546485, 8.15020408, 8.54494331]
 
