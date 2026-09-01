@@ -48,6 +48,3 @@ python main.py
 
 A window titled **"Hands up 🔫"** will open showing your webcam feed with hand landmarks drawn on it. Bring both palms together in front of the camera (fingers aligned) to trigger the effect.
 
-## Known issues / things to clean up
-- `requirements.txt` includes many packages unrelated to this project (see note above).
-
