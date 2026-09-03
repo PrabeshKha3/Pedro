@@ -15,7 +15,7 @@ class Webcam(QGraphicsView):
         self.scene = QGraphicsScene(self)
         self.setScene(self.scene)
         self.resize(800, 600)
-        self.setWindowTitle("Leaf Village")
+        self.setWindowTitle("Hands up 🔫")
 
         # creating a Pixmaop item on the scene to hold our image frames
         self.video_frame_item = QGraphicsPixmapItem()
